@@ -24,7 +24,7 @@ int main()
 		input.push_back(x);
 	}
 
-	auto answer = measure::function(addTo2020, input);
-	std::cout << "Answer: " << std::get<0>(answer) << " in "
-		  << std::get<1>(answer).count() << " μs" << std::endl;
+	auto [answer, time] = measure::function(addTo2020, input);
+	std::cout << "Answer: " << answer << " in " << time.count() << " μs"
+		  << std::endl;
 }
