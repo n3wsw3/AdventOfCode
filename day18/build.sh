@@ -1,0 +1,1 @@
+g++ main.cpp -L../Expresly/bin/Debug-linux-x86_64/ -lexpresly -I../Expresly/expresly/include -o out
